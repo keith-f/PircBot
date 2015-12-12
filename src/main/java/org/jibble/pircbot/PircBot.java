@@ -358,7 +358,7 @@ public abstract class PircBot implements ReplyConstants {
      *
      * @param channel The name of the channel to join (eg "#cs").
      */
-    public final void joinChannel(String channel) {
+    public void joinChannel(String channel) {
         this.sendRawLine("JOIN " + channel);
     }
 
@@ -369,7 +369,7 @@ public abstract class PircBot implements ReplyConstants {
      * @param channel The name of the channel to join (eg "#cs").
      * @param key The key that will be used to join the channel.
      */
-    public final void joinChannel(String channel, String key) {
+    public void joinChannel(String channel, String key) {
         this.joinChannel(channel + " " + key);
     }
 
@@ -379,7 +379,7 @@ public abstract class PircBot implements ReplyConstants {
      *
      * @param channel The name of the channel to leave.
      */
-    public final void partChannel(String channel) {
+    public void partChannel(String channel) {
         this.sendRawLine("PART " + channel);
     }
 
@@ -390,7 +390,7 @@ public abstract class PircBot implements ReplyConstants {
      * @param channel The name of the channel to leave.
      * @param reason  The reason for parting the channel.
      */
-    public final void partChannel(String channel, String reason) {
+    public void partChannel(String channel, String reason) {
         this.sendRawLine("PART " + channel + " :" + reason);
     }
 
@@ -521,7 +521,7 @@ public abstract class PircBot implements ReplyConstants {
      *
      * @param newNick The new nick to use.
      */
-    public final void changeNick(String newNick) {
+    public void changeNick(String newNick) {
         this.sendRawLine("NICK " + newNick);
     }
 
