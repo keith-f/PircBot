@@ -47,11 +47,11 @@
 
   <distributionManagement>
     <repository>
-      <id>www.scalesinformatics.com-releases</id>
+      <id>maven.scalesinformatics.com-releases</id>
       <url>scpexe://192.168.0.47/var/www/maven.scalesinformatics.com/releases</url>
     </repository>
     <snapshotRepository>
-      <id>www.scalesinformatics.com-snapshots</id>
+      <id>maven.scalesinformatics.com-snapshots</id>
       <url>scpexe://192.168.0.47/var/www/maven.scalesinformatics.com/snapshots</url>
     </snapshotRepository>
   </distributionManagement>
