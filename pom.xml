@@ -48,13 +48,29 @@
   <distributionManagement>
     <repository>
       <id>maven.scalesinformatics.com-releases</id>
-      <url>scpexe://192.168.0.47/var/www/maven.scalesinformatics.com/releases</url>
+      <url>scpexe://web-proxy/var/www/maven.scalesinformatics.com/releases</url>
     </repository>
     <snapshotRepository>
       <id>maven.scalesinformatics.com-snapshots</id>
-      <url>scpexe://192.168.0.47/var/www/maven.scalesinformatics.com/snapshots</url>
+      <url>scpexe://web-proxy/var/www/maven.scalesinformatics.com/snapshots</url>
     </snapshotRepository>
   </distributionManagement>
+
+
+  <!-- Remote repository info -->
+  <!--<repositories>-->
+    <!--<repository>-->
+      <!--<id>maven.scalesinformatics-releases</id>-->
+      <!--<url>http://maven.scalesinformatics.com/releases</url>-->
+    <!--</repository>-->
+    <!--<repository>-->
+      <!--<id>maven.scalesinformatics-snapshot</id>-->
+      <!--<url>http://maven.scalesinformatics.com/snapshots</url>-->
+      <!--<snapshots>-->
+        <!--<enabled>true</enabled>-->
+      <!--</snapshots>-->
+    <!--</repository>-->
+  <!--</repositories>-->
 
   <dependencies>
     <dependency>
